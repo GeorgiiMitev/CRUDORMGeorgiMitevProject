@@ -48,7 +48,7 @@ namespace CRUDORM_GeorgiMitev_Project.View
         {
             List<AnimalTypes> allAnimalTypes = animalTypesController.GetAllTypes();
             cmbBoxTypeId.DataSource = allAnimalTypes;
-            cmbBoxTypeId.DisplayMember = "Type";
+            cmbBoxTypeId.DisplayMember = "Name";
             cmbBoxTypeId.ValueMember = "Id";
 
             buttonSelect_Click(sender, e);
@@ -67,7 +67,7 @@ namespace CRUDORM_GeorgiMitev_Project.View
             newAnimal.Description = txtBoxDescription.Text;
             newAnimal.Price = int.Parse(txtBoxPrice.Text);
             newAnimal.Age = int.Parse(txtBoxAge.Text);
-            newAnimal.TypeId = cmbBoxTypeId.SelectedIndex;
+            newAnimal.AnimalTypeId = cmbBoxTypeId.SelectedIndex;
 
 
             animalController.Create(newAnimal);
@@ -131,7 +131,7 @@ namespace CRUDORM_GeorgiMitev_Project.View
                 updatedAnimal.Description = txtBoxDescription.Text;
                 updatedAnimal.Price = int.Parse(txtBoxPrice.Text);
                 updatedAnimal.Age = int.Parse(txtBoxAge.Text);
-                updatedAnimal.TypeId = cmbBoxTypeId.SelectedIndex;
+                updatedAnimal.AnimalTypeId = cmbBoxTypeId.SelectedIndex;
 
                 animalController.Update(findId, updatedAnimal);
 

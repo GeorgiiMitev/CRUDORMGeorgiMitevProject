@@ -23,12 +23,12 @@ namespace CRUDORM_GeorgiMitev_Project.Controller
 
         public List<Animal> GetAll()
         {
-            return _animalContext.Animals.Include("AnimalTypes").ToList();
+            return _animalContext.Animals.Include("AnimalType").ToList();
         }
 
-        public void Create(Animal product)
+        public void Create(Animal animal)
         {
-            _animalContext.Animals.Add(product);
+            _animalContext.Animals.Add(animal);
             _animalContext.SaveChanges();
         }
 
@@ -44,8 +44,6 @@ namespace CRUDORM_GeorgiMitev_Project.Controller
             animal.Price = product.Price;
             animal.Age = product.Age;
             animal.AnimalType = product.AnimalType;
-
-
             _animalContext.SaveChanges();
         }
 

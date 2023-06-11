@@ -152,9 +152,9 @@
             // listBox
             // 
             this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(336, 26);
+            this.listBox.Location = new System.Drawing.Point(267, 26);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(149, 264);
+            this.listBox.Size = new System.Drawing.Size(330, 277);
             this.listBox.TabIndex = 3;
             // 
             // buttonAdd

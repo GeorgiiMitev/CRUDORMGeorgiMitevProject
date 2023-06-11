@@ -57,9 +57,9 @@
   <ItemGroup>
     <Compile Include="Controller\AnimalController.cs" />
     <Compile Include="Controller\AnimalTypesController.cs" />
-    <Compile Include="Migrations\202306071716175_FirstMigration.cs" />
-    <Compile Include="Migrations\202306071716175_FirstMigration.designer.cs">
-      <DependentUpon>202306071716175_FirstMigration.cs</DependentUpon>
+    <Compile Include="Migrations\202306111322073_FourthMigration.cs" />
+    <Compile Include="Migrations\202306111322073_FourthMigration.designer.cs">
+      <DependentUpon>202306111322073_FourthMigration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Animal.cs" />
@@ -80,8 +80,8 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202306071716175_FirstMigration.resx">
-      <DependentUpon>202306071716175_FirstMigration.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202306111322073_FourthMigration.resx">
+      <DependentUpon>202306111322073_FourthMigration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
