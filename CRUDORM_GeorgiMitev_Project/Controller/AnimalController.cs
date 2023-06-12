@@ -43,7 +43,7 @@ namespace CRUDORM_GeorgiMitev_Project.Controller
             animal.Description = product.Description;
             animal.Price = product.Price;
             animal.Age = product.Age;
-            animal.AnimalType = product.AnimalType;
+            animal.AnimalTypeId = product.AnimalTypeId;
             _animalContext.SaveChanges();
         }
 

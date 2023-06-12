@@ -26,7 +26,7 @@ namespace CRUDORM_GeorgiMitev_Project.View
         {
             txtBoxId.Text = product.Id.ToString();
             txtBoxName.Text = product.Name;
-            txtBoxDescription.Text = product.Price.ToString();
+            txtBoxDescription.Text = product.Description.ToString();
             txtBoxPrice.Text = product.Price.ToString();
             txtBoxAge.Text = product.Age.ToString();
             cmbBoxTypeId.Text = product.AnimalType.Name;
@@ -92,7 +92,7 @@ namespace CRUDORM_GeorgiMitev_Project.View
             Animal animal = animalController.Get(findId);
             if (animal == null)
             {
-                MessageBox.Show("НЯМА ТАКЪВ ЗАПИС в БД! \n Enter ID!");
+                MessageBox.Show("НЯМА ТАКЪВ ЗАПИС в БД!");
                 txtBoxId.Focus();
                 return;
             }
