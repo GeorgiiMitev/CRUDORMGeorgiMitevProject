@@ -67,7 +67,7 @@ namespace CRUDORM_GeorgiMitev_Project.View
             newAnimal.Description = txtBoxDescription.Text;
             newAnimal.Price = int.Parse(txtBoxPrice.Text);
             newAnimal.Age = int.Parse(txtBoxAge.Text);
-            newAnimal.AnimalTypeId = cmbBoxTypeId.SelectedIndex;
+            newAnimal.AnimalTypeId = (int)cmbBoxTypeId.SelectedValue;
 
 
             animalController.Create(newAnimal);
