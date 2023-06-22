@@ -12,8 +12,19 @@ namespace CRUDORM_GeorgiMitev_Project
     {
         static void Main(string[] args)
         {
-            Form1 form = new Form1();
-            Application.Run(form);
+            Console.WriteLine("Enter 1 for Form Application or 2 for Console Application.");
+            int choice = int.Parse(Console.ReadLine());
+            if (choice == 1)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Form1());
+            }
+            else if (choice == 2)
+            {
+                Display display = new Display();
+            }
+            
         }
     }
 }

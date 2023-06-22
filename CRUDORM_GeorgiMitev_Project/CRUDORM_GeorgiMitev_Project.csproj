@@ -65,6 +65,7 @@
     <Compile Include="Model\Animal.cs" />
     <Compile Include="Model\AnimalContext.cs" />
     <Compile Include="Model\AnimalTypes.cs" />
+    <Compile Include="View\Display.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

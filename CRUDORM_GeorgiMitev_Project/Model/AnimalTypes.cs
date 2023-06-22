@@ -10,6 +10,6 @@ namespace CRUDORM_GeorgiMitev_Project.Model
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        ICollection<Animal> Animals { get; set; }
+        ICollection<Animal> Animals { get; set; } // 1 : M
     }
 }

@@ -13,7 +13,7 @@ namespace CRUDORM_GeorgiMitev_Project.Model
         {
 
         }
-        public DbSet<Animal> Animals { get; set; }
-        public DbSet<AnimalTypes> AnimalTypes { get; set; }    
+        public DbSet<Animal> Animals { get; set; } // Animals table
+        public DbSet<AnimalTypes> AnimalTypes { get; set; } // AnimalTypes table
     }
 }

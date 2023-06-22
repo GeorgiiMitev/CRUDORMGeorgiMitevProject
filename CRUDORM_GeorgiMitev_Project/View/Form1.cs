@@ -22,14 +22,14 @@ namespace CRUDORM_GeorgiMitev_Project.View
             InitializeComponent();
         }
 
-        private void LoadRecord(Animal product)
+        private void LoadRecord(Animal animal)
         {
-            txtBoxId.Text = product.Id.ToString();
-            txtBoxName.Text = product.Name;
-            txtBoxDescription.Text = product.Description.ToString();
-            txtBoxPrice.Text = product.Price.ToString();
-            txtBoxAge.Text = product.Age.ToString();
-            cmbBoxTypeId.Text = product.AnimalType.Name;
+            txtBoxId.Text = animal.Id.ToString();
+            txtBoxName.Text = animal.Name;
+            txtBoxDescription.Text = animal.Description.ToString();
+            txtBoxPrice.Text = animal.Price.ToString();
+            txtBoxAge.Text = animal.Age.ToString();
+            cmbBoxTypeId.Text = animal.AnimalType.Name;
             
         }
 
@@ -153,10 +153,10 @@ namespace CRUDORM_GeorgiMitev_Project.View
             {
                 findId = int.Parse(txtBoxId.Text);
             }
-            Animal findedProduct = animalController.Get(findId);
-            if (findedProduct == null)
+            Animal findAnimal = animalController.Get(findId);
+            if (findAnimal == null)
             {
-                MessageBox.Show("НЯМА ТАКЪВ ЗАПИС в БД! \n Enter ID!");
+                MessageBox.Show("НЯМА ТАКЪВ ЗАПИС в БД!");
                 txtBoxId.Focus();
                 return;
             }

@@ -13,7 +13,7 @@ namespace CRUDORM_GeorgiMitev_Project.Model
         public string Description { get; set; }
         public int Price { get; set; }
         public int Age { get; set; }
-        public int AnimalTypeId { get; set; }
-        public AnimalTypes AnimalType { get; set; }  
+        public int AnimalTypeId { get; set; } 
+        public AnimalTypes AnimalType { get; set; } // M : 1
     }
 }
